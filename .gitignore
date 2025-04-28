@@ -1,0 +1,53 @@
+# Node modules and dependencies (if any frontend tooling is used)
+node_modules/
+
+# Composer dependencies
+/vendor/
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Uploaded files (if users upload reports or data)
+uploads/
+reports/
+data/
+
+# Cache and temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Database files or backups
+*.sql
+*.sqlite
+*.db
+
+# PHPStorm or VSCode project configs
+*.iml
+
+# Debug or error trace files
+error_log
+
+# Compiled source files or auto-generated files
+*.class
+*.o
+*.pyc
+
+# XAMPP or local server config files (if you copied full directories)
+/xampp/
+
+# Backup files
+*~

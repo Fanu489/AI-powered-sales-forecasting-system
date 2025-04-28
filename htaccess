@@ -1,0 +1,23 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base URL for the system
+RewriteBase /AI%20POWERED%20SALES%20FORECASTING%20SYSTEM/
+
+# Remove index.php from the URL if it appears
+RewriteCond %{THE_REQUEST} \ /index\.php [NC]
+RewriteRule ^index\.php$ /AI%20POWERED%20SALES%20FORECASTING%20SYSTEM/ [L,R=301]
+
+# Handle clean URLs: Redirect non-file/directory requests to the appropriate paths
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /AI%20POWERED%20SALES%20FORECASTING%20SYSTEM/$1 [L,QSA]
+
+# Redirect 'login' to the 'users/login.php' page
+RewriteRule ^login$ /AI%20POWERED%20SALES%20FORECASTING%20SYSTEM/views/users/login.php [L]
+
+# Prevent access to .htaccess file
+<Files .htaccess>
+  Order allow,deny
+  Deny from all
+</Files>
